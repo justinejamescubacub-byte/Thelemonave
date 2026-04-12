@@ -9,6 +9,7 @@
 html,
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +28,7 @@ header {
 
 header.scroll {
     background-color: rgb(255, 239, 147);
+    transition: all ease 0.5s;
 }
 
 .nav-body {
@@ -310,6 +312,7 @@ input {
 
 
 .menu {
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -320,10 +323,25 @@ input {
 
 .menu-item {
     width: 220px;
+=======
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    height: 950px;
+}
+
+.menu-item {
+    width: 100%;
+    max-width: 250px;
+>>>>>>> 77ff6232689f0d98ebc522492c792abef3b193cb
     background: white;
     border-radius: 15px;
     text-decoration: none;
     color: black;
+<<<<<<< HEAD
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -338,6 +356,9 @@ input {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(255, 81, 28, 0.25);
     border-color: #ff511c;
+=======
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+>>>>>>> 77ff6232689f0d98ebc522492c792abef3b193cb
 }
 
 .menu-item img {
@@ -384,7 +405,16 @@ h2 {
     margin-bottom: 15px;
 }
 
+.head {
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
+<<<<<<< HEAD
 /* ===== PRODUCT SECTION ===== */
 
 .product-image {
@@ -456,10 +486,86 @@ h2 {
     font-weight: 700;
     margin-bottom: 15px;
     font-family: sans-serif;
+=======
+.h2wo {
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.h2wo span {
+    color: #ff511c;
+}
+
+/* happy */
+.product-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    flex-direction: column;
+gap: 50px;
+}
+
+.product-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+}
+
+h3{
+    align-items: left;
+    justify-content: left;
+}
+
+.product-card {
+     font-family: "Press Start 2P", system-ui;
+    width: 100%;
+    max-width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20PX;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-name {
+    margin: 10px 0;
+}
+
+.Drinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.drinks-header h3{
+    font-size: 3rem;
+}
+
+.drinks-body{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap ;
+    width: 100%;
+>>>>>>> 77ff6232689f0d98ebc522492c792abef3b193cb
 }
 
 .product-description {
     font-size: 14px;
+<<<<<<< HEAD
     color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -502,6 +608,30 @@ h2 {
 
 /* ===== MEDIA QUERIES ===== */
 
+=======
+    color: gray;
+}
+
+.product-price {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+.buy-button {
+    background: orange;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background: darkorange;
+}
+
+>>>>>>> 77ff6232689f0d98ebc522492c792abef3b193cb
 @media (max-width: 456px) {
     .nav-body .logo h1 {
         font-size: 25px;
@@ -539,6 +669,7 @@ h2 {
         object-fit: cover;
     }
 
+<<<<<<< HEAD
     .product-image h1 {
         font-size: 28px;
         margin-bottom: 30px;
@@ -557,4 +688,48 @@ h2 {
         padding: 20px;
     }
 
+=======
+    .menu {
+        height: auto;
+    }
+
+    .product-card{
+        width: 300px;
+    }
+
+    .product-body{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .product-image{
+        height: auto;
+        margin-top: 10rem;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .nav-body .logo h1 {
+        font-size: 25px;
+    }
+
+    .content .content-right img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .menu{
+        height: auto;
+        padding: 1rem;
+    }
+
+    .product-image{
+        height: auto;
+        padding: 1rem;
+    }
+>>>>>>> 77ff6232689f0d98ebc522492c792abef3b193cb
 }
