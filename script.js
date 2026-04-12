@@ -1,4 +1,4 @@
-const img = ["images/bg.jpg", "images/2cat.jpg", "images/bg.jpg", "images/pusa.jpg", "images/wings.jpg"]
+const img = ["images/happy.jpg", "images/sad.jpg", "images/chill.jpg", "images/stress.jpg", "images/angry.jpg"]
 
 let curentimage = 0
 
