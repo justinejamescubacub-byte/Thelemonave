@@ -15,7 +15,7 @@ body {
     background-size: 1800px;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@ header{
     z-index: 9999;
 }
 
-header.scroll{
+header.scroll {
     background-color: rgb(255, 239, 147);
 }
 
@@ -36,8 +36,8 @@ header.scroll{
     align-items: center;
 }
 
-.nav-body .logo{
-     display: flex;
+.nav-body .logo {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -54,9 +54,9 @@ header.scroll{
     color: #ff511c;
 }
 
-  .bars{
-        display: none;
-    }
+.bars {
+    display: none;
+}
 
 
 .nav-body ul {
@@ -68,7 +68,7 @@ header.scroll{
 }
 
 .nav-body ul li {
-   list-style: none;
+    list-style: none;
 }
 
 .nav-body ul li a {
@@ -108,11 +108,11 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-     background-color: #FFF7CD;
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     padding: 1rem;
+    background-color: #FFF7CD;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
 }
 
 .content {
@@ -135,28 +135,48 @@ input {
 }
 
 .content .content-left .info h2 {
-    font-size: 60px;
+    font-size: 52px;
     font-family: "Press Start 2P", system-ui;
     font-weight: 900;
     font-style: normal;
     margin-bottom: 30px;
+    line-height: 1.3;
+    color: #333;
 }
 
 .content .content-left .info p {
-    font-size: 20px;
-    line-height: 2pc;
+    font-size: 18px;
+    line-height: 1.8;
     margin-bottom: 30px;
     font-family: sans-serif;
-    color: black;
+    color: #555;
+    letter-spacing: 0.5px;
 }
 
 .content .content-left button {
-    padding: 10px 23px;
+    padding: 15px 40px;
     background-color: #ff511c;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(255, 81, 28, 0.3);
+}
+
+.content .content-left button:hover {
+    background-color: #d94517;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 81, 28, 0.4);
+}
+
+.content .content-left button:active {
+    transform: translateY(-1px);
 }
 
 .content .content-right {
@@ -198,32 +218,47 @@ input {
 .menu {
     margin-top: 80px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
+    padding: 60px 20px;
 }
 
-.food img {
-    width: 200px;
-
+.h2wo {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-
-
-
-.food h3 {
-    margin-top: 80px;
+.h2wo h1 {
+    font-size: 72px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
 }
 
-.food {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    flex: 1 1 80px;
-    width: auto;
-    height: auto;
+.h2wo h1 span {
+    color: #ff511c;
+    display: inline-block;
+}
 
+.h2wo h2 {
+    font-size: 24px;
+    color: #666;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
 }
 
 .h1 {
@@ -275,40 +310,53 @@ input {
 
 
 .menu {
-
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 40px;
+    padding: 0 20px;
 }
 
 .menu-item {
-    width: 250px;
+    width: 220px;
     background: white;
-    border-radius: 10px;
+    border-radius: 15px;
     text-decoration: none;
     color: black;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border: 2px solid transparent;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 81, 28, 0.25);
+    border-color: #ff511c;
 }
 
 .menu-item img {
-    margin-top: 30px;
-    margin-left: 20px;
-    width: 200px;
-    height: 150px;
-    border-radius: 10px;
-    transition: 0.3s;
+    margin-top: 15px;
+    width: 180px;
+    height: 140px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    object-fit: cover;
 }
 
 .menu-item img:hover {
-    transform: scale(1.1);
-
+    transform: scale(1.08);
 }
 
 
 h1 {
     font-size: 70px;
     text-align: center;
-
 }
 
 h2 {
@@ -316,14 +364,15 @@ h2 {
     margin-bottom: 30px;
 }
 
-
 .food-name {
     font-family: sans-serif;
     text-align: center;
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    background-color: yellow
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #333;
+    background-color: transparent;
 }
 
 .price {
@@ -336,28 +385,147 @@ h2 {
 }
 
 
-@media (max-width: 456px){
+/* ===== PRODUCT SECTION ===== */
+
+.product-image {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    min-height: 100vh;
+}
+
+.product-image h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 50px;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    font-weight: 900;
+}
+
+.product-body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Drinks {
+    margin-bottom: 80px;
+}
+
+.drinks-header {
+    margin-bottom: 40px;
+}
+
+.drinks-header h3 {
+    font-size: 36px;
+    color: #ff511c;
+    font-weight: 700;
+    font-family: sans-serif;
+    border-bottom: 3px solid #ff511c;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.drinks-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid #ff511c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(255, 81, 28, 0.2);
+}
+
+.product-name {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    font-family: sans-serif;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #ff511c;
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.buy-button {
+    background-color: #ff511c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.buy-button:hover {
+    background-color: #d94517;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 81, 28, 0.4);
+}
+
+.buy-button:active {
+    transform: scale(0.98);
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 456px) {
     .nav-body .logo h1 {
         font-size: 25px;
     }
 
-    .nav-body nav{
+    .nav-body nav {
         display: none;
     }
 
-  .bars{
+    .bars {
         display: flex;
     }
-    .grid{
+
+    .grid {
         height: auto;
         padding-top: 5em;
     }
-    .content{
+
+    .content {
         width: 100%;
         flex-direction: column-reverse;
     }
 
-    .content .content-left{
+    .content .content-left {
         width: 100%;
     }
 
@@ -369,6 +537,24 @@ h2 {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .product-image h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .drinks-header h3 {
+        font-size: 24px;
+    }
+
+    .drinks-body {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product-card {
+        padding: 20px;
     }
 
 }
