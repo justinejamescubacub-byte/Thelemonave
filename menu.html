@@ -1,48 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Menu - The Lemon Ave.</title>
 </head>
+
 <body>
-    <section class="Menu">
-        <div class="h1">
-            <h1> Food Menu</h1>
-            <p>
-               
-                
-            </p>
+    <header>
+        <div class="nav-body">
+            <div class="logo">
+                <h1>Lemon<b>Ave</b></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="menu.html">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+            <svg class="bars" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </div>
+    </header>
+
+    <section class="menu-page">
+        <div class="menu-page-header">
+            <h1>Our Complete Menu</h1>
+            <p>Order based on your mood and preferences</p>
         </div>
 
-        <div class=" menu">
-            <div class="food">
-                <img src="images/burger.jpg">
-                <h3> Burger</h3>
-            </div>
-
-             <div class="food">
-                <img src="images/pizza.jpg">
-                <h3>Pizza</h3>
-            </div>
-
-             <div class="food">
-             <img src="images/fries.jpg">
-             <h3>Fries</h3>
-             </div>
-        </div>
-             <div class="items">
-                   <div class="product">
-                    <img src="images/2cat.jpg">
-                    <h3>FIN And Shiro</h3>
-                    <p></p>
+        <!-- Wings Section -->
+        <div class="menu-section">
+            <h2>Wings & Appetizers</h2>
+            <div class="menu-items-grid">
+                <div class="menu-card">
+                    <img src="images/wings.jpg" alt="Crispy Wings">
+                    <div class="menu-card-content">
+                        <h3>Crispy Wings</h3>
+                        <p class="description">Golden fried wings with special seasoning</p>
+                        <p class="price">₱120</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
                 </div>
 
+                <div class="menu-card">
+                    <img src="images/shanghai.jpg" alt="Shanghai Rolls">
+                    <div class="menu-card-content">
+                        <h3>Shanghai Rolls</h3>
+                        <p class="description">Fresh and crispy spring rolls</p>
+                        <p class="price">₱100</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/fries.jpg" alt="Loaded Fries">
+                    <div class="menu-card-content">
+                        <h3>Loaded Fries</h3>
+                        <p class="description">Perfectly seasoned crispy fries</p>
+                        <p class="price">₱85</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Dishes Section -->
+        <div class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-items-grid">
+                <div class="menu-card">
+                    <img src="images/burger.jpg" alt="Gourmet Burger">
+                    <div class="menu-card-content">
+                        <h3>Gourmet Burger</h3>
+                        <p class="description">Premium beef with fresh toppings</p>
+                        <p class="price">₱95</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/pizza.jpg" alt="Artisan Pizza">
+                    <div class="menu-card-content">
+                        <h3>Artisan Pizza</h3>
+                        <p class="description">Freshly baked with quality ingredients</p>
+                        <p class="price">₱150</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/2cat.jpg" alt="Special Platter">
+                    <div class="menu-card-content">
+                        <h3>Special Platter</h3>
+                        <p class="description">Mixed selection of our best dishes</p>
+                        <p class="price">₱200</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beverages Section -->
+        <div class="menu-section">
+            <h2>Refreshing Beverages</h2>
+            <div class="menu-items-grid">
+                <div class="menu-card">
+                    <img src="images/happy.jpg" alt="Happy Blend">
+                    <div class="menu-card-content">
+                        <h3>Happy Blend</h3>
+                        <p class="description">Citrus refresher with fresh lemon</p>
+                        <p class="price">₱65</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/chill.jpg" alt="Chill Wave">
+                    <div class="menu-card-content">
+                        <h3>Chill Wave</h3>
+                        <p class="description">Cool and smooth tropical blend</p>
+                        <p class="price">₱65</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/stress.jpg" alt="Zen Blend">
+                    <div class="menu-card-content">
+                        <h3>Zen Blend</h3>
+                        <p class="description">Calming herbal mix for relaxation</p>
+                        <p class="price">₱75</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-         
-        
-        
-             
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Operating Hours</h3>
+                <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+                <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                <p>Sunday: 12:00 PM - 9:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📍</span>
+                        <div class="footer-contact-info">123 Lemon Street, Food City</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📞</span>
+                        <div class="footer-contact-info">+1 (555) 123-4567</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📧</span>
+                        <div class="footer-contact-info">hello@thelemonave.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Lemon Ave. All rights reserved.</p>
+            <p>Crafted with ❤️ for food lovers everywhere</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

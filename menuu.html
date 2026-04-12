@@ -1,38 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Special Menu - The Lemon Ave.</title>
 </head>
 
 <body>
+    <header>
+        <div class="nav-body">
+            <div class="logo">
+                <h1>Lemon<b>Ave</b></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="menu.html">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+            <svg class="bars" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </div>
+    </header>
 
-<h1>The Lemon Ave.</h1>
-<h2> Order base on your mood :></h2>
+    <section class="menu-page">
+        <div class="menu-page-header">
+            <h1>Order Based on Your Mood 🍋</h1>
+            <p>Choose your favorite mood category and enjoy specially curated flavors</p>
+        </div>
 
-<div class="menu">
+        <!-- Happy Mood -->
+        <div class="menu-section">
+            <h2>😊 Happy Mood</h2>
+            <p class="mood-description">Bright, uplifting flavors to keep your spirits high!</p>
+            <div class="menu-items-grid">
+                <div class="menu-card">
+                    <img src="images/happy.jpg" alt="Happy Drink">
+                    <div class="menu-card-content">
+                        <h3>Happy Lemonade</h3>
+                        <p class="description">Fresh citrus blend with a smile</p>
+                        <p class="price">₱65</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
 
-    <a href="wings.html" class="menu-item">
-        <img src="images/wings.jpg" alt="Wings">
-        <p class="food-name">Wings</p>
-        <p class="price">₱120</p>
-    </a>
+                <div class="menu-card">
+                    <img src="images/wings.jpg" alt="Wings">
+                    <div class="menu-card-content">
+                        <h3>Golden Wings Delight</h3>
+                        <p class="description">Crispy wings with joyful seasoning</p>
+                        <p class="price">₱120</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
 
-    <a href="shanghai.html" class="menu-item">
-        <img src="images/shanghai.jpg" alt="Shanghai">
-        <p class="food-name">Shanghai</p>
-        <p class="price">₱100</p>
-    </a>
+                <div class="menu-card">
+                    <img src="images/fries.jpg" alt="Fries">
+                    <div class="menu-card-content">
+                        <h3>Happy Fries Bundle</h3>
+                        <p class="description">Perfectly salted and crispy goodness</p>
+                        <p class="price">₱85</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <a href="Burger.html" class="menu-item">
-        <img src="images/burger.jpg" alt="Burger">
-        <p class="food-name">Burger</p>
-        <p class="price">₱95</p>
-    </a>
+        <!-- Chill Mood -->
+        <div class="menu-section">
+            <h2>❄️ Chill Mood</h2>
+            <p class="mood-description">Smooth, cool, and refreshing - perfect for relaxation</p>
+            <div class="menu-items-grid">
+                <div class="menu-card">
+                    <img src="images/chill.jpg" alt="Chill Drink">
+                    <div class="menu-card-content">
+                        <h3>Chill Wave Smoothie</h3>
+                        <p class="description">Cool tropical breeze in a glass</p>
+                        <p class="price">₱75</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
 
-</div>
+                <div class="menu-card">
+                    <img src="images/pizza.jpg" alt="Pizza">
+                    <div class="menu-card-content">
+                        <h3>Chill Vibes Pizza</h3>
+                        <p class="description">Relaxing flavors on fresh dough</p>
+                        <p class="price">₱150</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
 
+                <div class="menu-card">
+                    <img src="images/burger.jpg" alt="Burger">
+                    <div class="menu-card-content">
+                        <h3>Chill Burger Bliss</h3>
+                        <p class="description">Take it easy with premium comfort food</p>
+                        <p class="price">₱95</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stress Relief Mood -->
+        <div class="menu-section">
+            <h2>😓 Stress Relief</h2>
+            <p class="mood-description">Comfort foods and calming drinks to ease your mind</p>
+            <div class="menu-items-grid">
+                <div class="menu-card">
+                    <img src="images/stress.jpg" alt="Stress Relief">
+                    <div class="menu-card-content">
+                        <h3>Zen Calming Blend</h3>
+                        <p class="description">Herbal mix for inner peace</p>
+                        <p class="price">₱75</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/shanghai.jpg" alt="Shanghai">
+                    <div class="menu-card-content">
+                        <h3>Stress-Free Rolls</h3>
+                        <p class="description">Comfort rolls to soothe your soul</p>
+                        <p class="price">₱100</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/2cat.jpg" alt="Special Platter">
+                    <div class="menu-card-content">
+                        <h3>Stress Relief Combo</h3>
+                        <p class="description">Everything you need to unwind</p>
+                        <p class="price">₱180</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angry/Spicy Mood -->
+        <div class="menu-section">
+            <h2>🔥 Spicy Adventure</h2>
+            <p class="mood-description">Bold, fiery flavors for the adventurous soul</p>
+            <div class="menu-items-grid">
+                <div class="menu-card">
+                    <img src="images/angry.jpg" alt="Spicy Drink">
+                    <div class="menu-card-content">
+                        <h3>Spicy Rush Drink</h3>
+                        <p class="description">Kick up your taste buds with fire</p>
+                        <p class="price">₱85</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/bg.jpg" alt="Spicy Main">
+                    <div class="menu-card-content">
+                        <h3>Fiery Sensation</h3>
+                        <p class="description">Bold spices for bold appetites</p>
+                        <p class="price">₱140</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/pusa.jpg" alt="Grilled">
+                    <div class="menu-card-content">
+                        <h3>Smoky Spicy Grill</h3>
+                        <p class="description">Grilled perfection with heat</p>
+                        <p class="price">₱160</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Operating Hours</h3>
+                <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+                <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                <p>Sunday: 12:00 PM - 9:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📍</span>
+                        <div class="footer-contact-info">123 Lemon Street, Food City</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📞</span>
+                        <div class="footer-contact-info">+1 (555) 123-4567</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📧</span>
+                        <div class="footer-contact-info">hello@thelemonave.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Lemon Ave. All rights reserved.</p>
+            <p>Crafted with ❤️ for food lovers everywhere</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
